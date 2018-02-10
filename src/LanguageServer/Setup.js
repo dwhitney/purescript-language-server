@@ -26,7 +26,8 @@ exports.initConnection = function (commands) { return function (cb) { return fun
                 codeActionProvider: true,
                 executeCommandProvider: {
                     commands: commands
-                }
+                },
+                referencesProvider: true
             }
         };
     });

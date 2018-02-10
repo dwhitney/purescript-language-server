@@ -26,7 +26,8 @@ exports.initConnection = (commands: string[]) => (cb: (arg: {params: InitializeP
                 codeActionProvider: true,
                 executeCommandProvider: {
                     commands
-                }
+                },
+                referencesProvider: true
             }
         };
     });
